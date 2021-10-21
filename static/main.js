@@ -16,10 +16,12 @@ window.addEventListener("load", () => {
     // TODO: Use the access token to join a room
   }
 
-  // TODO: Complete function for handling when a participant connects to the room
+  // TODO: Complete function for handling when a participant
+  // connects to the room
   function handleConnectedParticipant(participant) {}
 
-  // TODO: Complete function for handling when a new participant track is published
+  // TODO: Complete function for handling when a new participant
+  // track is published
   function handleTrackPublished(trackPublication, participant) {}
 
   // tidy up helper function for when a participant disconnects
