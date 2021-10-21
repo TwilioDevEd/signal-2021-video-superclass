@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Twilio Video Stream</title>
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="{{ url_for('static', filename='favicon.png') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='main.css') }}"
+    />
+    <!-- Include the Twilio Live Player SDK, which is in the static/ folder along with the
+    Live assets -->
+    <script src="../static/twilio-live-player.min.js"></script>
+  </head>
+  <body>
+    <button id="join">Start Stream!</button>
+    <div id="stream"></div>
+    <script src="{{ url_for('static', filename='stream.js') }}"></script>
+  </body>
+</html>

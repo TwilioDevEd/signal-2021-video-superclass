@@ -16,6 +16,9 @@
     <script src="//media.twiliocdn.com/sdk/js/video/releases/2.17.1/twilio-video.min.js"></script>
   </head>
   <body>
+    <div><p id="streamingStatus">{{ streaming_status }}</p></div>
+    <button id="startStream">Stream this room</button>
+    <button id="stopStream">Stop streaming this room</button>
     <div class="circle">
       <div class="yarn" id="yarn-1"></div>
       <div class="yarn" id="yarn-2"></div>
