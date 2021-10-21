@@ -66,7 +66,9 @@ def get_token():
     )
     # create a video grant that will allow access to this app's
     # specific video room
-    video_grant = twilio.jwt.access_token.grants.VideoGrant(room=ROOM_NAME)
+    video_grant = twilio.jwt.access_token.grants.VideoGrant(
+        room=ROOM_NAME
+    )
     # Add the video grant to the access token
     access_token.add_grant(video_grant)
     # Turn the access token into a string and send it back as
